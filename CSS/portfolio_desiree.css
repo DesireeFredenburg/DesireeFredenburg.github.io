@@ -42,7 +42,7 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
-    font-size: 1.5vw;
+    font-size: 1.0vw;
     padding-left: 1vw; /* Adds padding to the left of the paragraph element */
     padding-right: 1vw; /* Adds padding to the right of the paragraph element */
 }
@@ -191,7 +191,7 @@ footer {
     width: 100%; /* Ensures the video-text container fills the width of the video */
     padding-top: .1vh; /*This adds padding around the text so that the background goes slightly beyound the text */
     padding-bottom: 1vh;
-    margin-top: 23%;
+    margin-top: 1%;
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveNav 4s; /* Safari 4.0 - 8.0*/
     animation: moveVideoText 4s;
@@ -212,6 +212,18 @@ footer {
 
 .mySlides {
     display: none;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @-webkit-keyframes fade {
@@ -237,7 +249,7 @@ footer {
 .Slide_Show_Images {
     vertical-align: middle;
     height: auto;
-    box-shadow: 0px 5px 10px 12px rgba(0,0,0, .75);
+    box-shadow: 0px 5px 10px 12px rgba(80, 76, 76, 0.75);
     width: auto;
 }
 
