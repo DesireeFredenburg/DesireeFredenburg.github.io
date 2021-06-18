@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Honeau Champagne</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/ageGate.css"> 
+        <script src="JS/ageGate.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Dancing+Script&family=Open+Sans+Condensed:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+<div id="ageGate">
+    <div class="form-gate" id="myAgeGate">
+        <h2>Honeau Champagne</h2>
+        <p>Are you over 21?</p>
+            <label for="date"><b>Date of birth:</b></label>
+                <input type="date" placeholder="MM/DD/YYYY" name="birthday" required>
+            <label for="place"><b>Country:</b></label>
+                <input type="place" placeholder="Please enter your country here." name="country" required>
+        
+            <b>Remember me:</b>
+            <input type="checkbox" id="myCheck" onclick="checkBox()">
+            <h3 id="check" style="display:none">Honeau will remember you.</h3>
+
+            <button type="submit" class="btn">SUBMIT</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

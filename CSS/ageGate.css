@@ -38,6 +38,24 @@ h1:hover {
     transition: transform 1s; /* This causes the transformation to last 1 second */
 }
 
+/* Heading 2 elements */
+h2 {
+    text-transform: uppercase; /* Capitalizing all h2 headings */
+    font-family: 'Bellota Text'; /* Sets the font family of all h2 headings */
+    text-align: center; /* Centering all h2 elements */
+    letter-spacing: .9vw;
+    margin-top: 3%; /* Adds a small margin above h2 elements */
+    color: grey;
+}
+
+h3 {
+    font-family: 'Bellota Text'; /* Sets the font family of all h3 headings */
+    text-align: center; /* Centering all h3 elements */
+    letter-spacing: .3vw;
+    margin-top: 3%; /* Adds a small margin above h3 elements */
+    color: grey;
+}
+
 /* Paragraph elements */
 p {
     font-family: 'Dancing Script', cursive;
@@ -75,13 +93,13 @@ center {
 
 /* Anchor elements #e4ad85*/
 a {
-    color: #868B8E; /* This ensures all links are light coral */
+    color: #868B8E; /* This ensures all links are light blue */
 }
 
 /* Image elements */
 img {
-    filter: grayscale(70%); /* This rids our pictures of 50% of their color */
-    border-radius: 3px; /* Gives all images slightly rounded corners */
+    filter: grayscale(70%); /* This rids our pictures of 70% of their color */
+    border-radius: 2px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
     height: 100%; /* Sets the height of all images */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
@@ -100,6 +118,7 @@ footer {
     padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
     background-color: #5a5a5a;
 }
+
 /***** END OF GENERAL STYLING *****/
 
 /***** NAVBAR STYLING *****/
@@ -111,14 +130,6 @@ footer {
     width: 100%; /* This makes the navbar span the entire width of the page */
     z-index: 1; /* This ensures other elements don't display over the navbar */
     position: fixed;
-    -webkit-animation: moveNav 5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
-    animation: moveNav 5s; /* This applies the moveNav animation for all other browsers */
-}
-
-/* moveNav animation effect for moving the nav bar in from the left of the screen */
-@keyframes moveNav {
-    from {left: -100vw;} /* The navbar is starting off screen to the left */
-    to {left: 0vw;} /* This moves the navbar into place on the screen */
 }
 
 /* Navbar links text */
@@ -131,16 +142,7 @@ footer {
     font-family: 'Open Sans Condensed', sans-serif; /* This specifies the font family for text on our navbar */
     font-size: 1.5vw; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
-    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 */
-    animation: moveNavText 5.75s; /* Applies the moveNavText animation for 5.75s */ 
     letter-spacing: .2vw;
-}
-
-/* moveNavText animation effect for moving the navbar text from above the view to the navbar */
-@keyframes moveNavText {
-    from {top: -100vw;} /* This sets the navbar text 100% above the viewport */
-    to {top: 0vw;} /* This lowers the navbar text onto the navbar */
 }
 
 /* Navbar hover effects */
@@ -201,7 +203,7 @@ footer {
 }
 
 .Column_2 {
-    float: left;
+    float: right;
     width: 50%;
     padding: .3%;
     height: 448px;
@@ -314,3 +316,44 @@ button:hover, .form-container .btn:hover {
 }
 
 /***** END OF CONTACT FORM STYLING *****/
+
+/***** AGE GATE FORM STYLING *****/
+
+/*The age gate form be visable default */
+.age-gate {
+    border: 3px solid #f0f1f0;
+    z-index: 1;
+    display: contents;
+    position: fixed;
+    
+    
+}
+
+/* Form styling */
+.form-gate {
+    max-width: 70vw;
+    padding: 60px;
+    background-color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #5a5a5a;
+}
+
+/* Full-width input styling*/
+input[type=date], input[type=place], input[type=check] {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: .93vw;
+    margin: .6vw 0 .6vw 0;
+    background: gainsboro;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.myCheck {
+    margin-bottom: 3%;
+}
+
+/***** END OF AGE GATE FORM STYLING *****/

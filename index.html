@@ -5,12 +5,13 @@
         <meta charset="UTF-8">
         <title>Honeau Champagne</title>
         <link rel="stylesheet" type="text/css" href="./CSS/ageGate.css"> 
+        <script src="JS/ageGate.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Dancing+Script&family=Open+Sans+Condensed:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <!--Body-->
-    <body class="Background">
+    <body onload="ageGate()" class="Background">
 
         <!--Navbar-->
         <div class="Navbar">
@@ -46,18 +47,17 @@
         <!--Shop section-->
         <div class="Row" id="Shop">
             <!--Left column-->
-            <div class="Column_2">
-                <img src="images/champagneBeach.jpg" alt="champagne on the beach" style="width:500px;height:600px;>
+            <div class="Column_1">
+                <img src="images/champagneBeach.jpg" alt="champagne on the beach" style="width:600px;height:700px"; >
             </div>
             <!--Right column-->
-            <div class="Column_1">
-                <h1>About</h1>
+            <div class="Column_2">
+                <h1>Honeau Champagne Vault</h1>
                 <p>
                     Discover the finest champagnes. 
                     <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s UI/UX Developer Boot Camp, and have experience in the following web and programming languages: HTML, CSS, JavaScript, SQL and more. 
+                    <br>Shop our collection. 
                     <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a onclick="openForm()" href="#Contact">Contact</a> me below!
                 </p>
             </div>
         </div>
@@ -89,6 +89,6 @@
                 <center>Honeau Champagne &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Kihei, Hawaii &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 2021</center>
             </p>
         </footer>
-        <script src="JS/ageGate.js"></script>
+       
     </body>
 </html>
