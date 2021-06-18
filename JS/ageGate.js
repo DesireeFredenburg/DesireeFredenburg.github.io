@@ -1,8 +1,7 @@
 //This function calls the age gate. 
-function ageGate() {
-    document.getElementById("myAgeGate").style.display = "display";
+function onload() { 
+document.getElementById("ageGate").onload = myAgeGate() ;
 }
-
 //remember me check box function
 function checkBox() {
     // Get the checkbox

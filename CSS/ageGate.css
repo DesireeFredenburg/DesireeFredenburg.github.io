@@ -230,6 +230,7 @@ footer {
     bottom: .5vw;
     right: .5vw;
     width: 15vw;
+    border-radius: 3px;
     background-color: #E7D2CC;
     color: #868B8E;
     border: solid;
@@ -336,6 +337,10 @@ button:hover, .form-container .btn:hover {
     background-color: white;
     font-family: 'Open Sans Condensed', sans-serif;
     color: #5a5a5a;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Full-width input styling*/
